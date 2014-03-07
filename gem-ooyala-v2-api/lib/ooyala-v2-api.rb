@@ -54,14 +54,14 @@ module Ooyala
   class API
     SUPPORTED_HTTP_METHODS    = %w{GET POST PUT PATCH DELETE}
     DEFAULT_BASE_URL          = 'https://api.ooyala.com'
-    DEFAULT_CACHE_BASE_URL    = 'https://cdn.api.ooyala.com'
+    DEFAULT_CACHE_BASE_URL    = 'https://cdn-api.ooyala.com'
     DEFAULT_EXPIRATION_WINDOW = 15
     ROUND_UP_TIME             = 300
 
     # Sets the String base URL (default: "https://api.ooyala.com").
     attr_writer :base_url
 
-    # Sets the String cache base URL (default: "https://cdn.api.ooyala.com").
+    # Sets the String cache base URL (default: "https://cdn-api.ooyala.com").
     attr_writer :cache_base_url
 
     # Sets the Number with the expiration window. This is added to the current
