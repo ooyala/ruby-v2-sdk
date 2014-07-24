@@ -52,7 +52,7 @@ class TestOoyalaApi < Test::Unit::TestCase
 
   def test_build_url
     url = @ooyala_api.build_url 'GET', '/v2/players/HbxJKM'
-    assert url.include?('https://cdn.api.ooyala.com/')
+    assert url.include?('https://cdn-api.ooyala.com/')
     assert url.include?('/v2/players/HbxJKM')
     url = @ooyala_api.build_url 'POST', '/v2/players/HbxJKM',
       {:test => true, 'a' => 'b'}
@@ -100,7 +100,7 @@ class TestOoyalaApi < Test::Unit::TestCase
     res = RestClient::Response
     mock(RestClient::Request).new.with_any_args do |*args|
       assert args.first[:url].include?(
-        "https://cdn.api.ooyala.com/v2/players/HbxJKM")
+        "https://cdn-api.ooyala.com/v2/players/HbxJKM")
       assert args.first[:url].include?("test=%27tr+ue%27")
       assert args.first[:url].include?("other=1")
       req
@@ -116,7 +116,7 @@ class TestOoyalaApi < Test::Unit::TestCase
     res = RestClient::Response
     mock(RestClient::Request).new.with_any_args do |*args|
       assert args.first[:url].include?(
-        "https://cdn.api.ooyala.com/v2/players/HbxJKM")
+        "https://cdn-api.ooyala.com/v2/players/HbxJKM")
       req
     end
     mock(req).execute { res }
