@@ -1,13 +1,15 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    json (1.6.5)
-    mime-types (1.17.2)
-    multi_json (1.1.0)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    rr (1.0.4)
-    simplecov (0.6.1)
+    json (1.6.8)
+    mime-types (2.3)
+    multi_json (1.10.1)
+    netrc (0.7.7)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rr (1.0.5)
+    simplecov (0.6.4)
       multi_json (~> 1.0)
       simplecov-html (~> 0.5.3)
     simplecov-html (0.5.3)
@@ -17,6 +19,6 @@ PLATFORMS
 
 DEPENDENCIES
   json (~> 1.6.5)
-  rest-client (~> 1.6.7)
+  rest-client
   rr (~> 1.0.4)
   simplecov (~> 0.6.1)
