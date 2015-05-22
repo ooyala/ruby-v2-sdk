@@ -263,7 +263,13 @@ module Ooyala
       return [] if response.body.empty?
       JSON.parse(response.body)
     rescue RestClient::Exception => ex
-      raise Ooyala::RequestErrorException.new(ex.inspect)
+      if ex.http_code == 429
+        scan = ex.inspect.scan(/(\d+)\ssecond/)
+        delay = scan[0][0].to_i
+        raise Ooyala::RateLimitException.new((Time.now + delay))
+      else
+        raise Ooyala::RequestErrorException.new(ex.inspect)
+      end
     end
 
     # Builds the URL for a request. Adds the query parameters, the signature
@@ -301,5 +307,8 @@ module Ooyala
   end
 
   class MethodNotSupportedException < StandardError
+  end
+
+  class RateLimitException < StandardError
   end
 end
