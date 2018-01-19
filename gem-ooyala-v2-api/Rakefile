@@ -18,13 +18,9 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "https://github.com/ooyala/api-sdks"
   gem.license = "MIT"
   gem.summary = %Q{Ooyala's API SDK}
-  gem.description = %Q{Contains the necessary mehtods to communicate with the Ooyala's API.}
+  gem.description = %Q{Contains the necessary methods to communicate with the Ooyala API.}
   gem.email = "jose@ooyala.com"
-  gem.authors = ["Ooyala"]
-  # dependencies defined in Gemfile
-  # dependencies defined in Gemfile
-  gem.add_dependency('json')
-  gem.add_dependency('rest-client', "~> 1.6.6")
+  gem.authors = ["Ooyala","DerikOlsson"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
