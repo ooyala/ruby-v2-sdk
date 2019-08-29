@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Jose Gasca"]
   s.date = "2013-05-21"
   s.description = "This gem allows the interaction with the Ooyala's API v2."
-  s.email = "jose@ooyala.com"
+  s.email = "jgasca@brightcove.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -39,35 +39,35 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rdoc>, [">= 0"])
-      s.add_runtime_dependency(%q<rake>, [">= 0"])
-      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.6"])
+      s.add_runtime_dependency(%q<rake>, ["11.0.0"])
+      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.13"])
       s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<tomdoc>, [">= 0"])
       s.add_runtime_dependency(%q<json>, [">= 0"])
-      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.6"])
+      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.13"])
     else
       s.add_dependency(%q<rdoc>, [">= 0"])
-      s.add_dependency(%q<rake>, [">= 0"])
-      s.add_dependency(%q<rest-client>, ["~> 1.6.6"])
+      s.add_dependency(%q<rake>, ["11.0.0"])
+      s.add_dependency(%q<rest-client>, ["~> 1.6.13"])
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<tomdoc>, [">= 0"])
       s.add_dependency(%q<json>, [">= 0"])
-      s.add_dependency(%q<rest-client>, ["~> 1.6.6"])
+      s.add_dependency(%q<rest-client>, ["~> 1.6.13"])
     end
   else
     s.add_dependency(%q<rdoc>, [">= 0"])
-    s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<rest-client>, ["~> 1.6.6"])
+    s.add_dependency(%q<rake>, ["11.0.0"])
+    s.add_dependency(%q<rest-client>, ["~> 1.6.13"])
     s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<tomdoc>, [">= 0"])
     s.add_dependency(%q<json>, [">= 0"])
-    s.add_dependency(%q<rest-client>, ["~> 1.6.6"])
+    s.add_dependency(%q<rest-client>, ["~> 1.6.13"])
   end
 end
 
