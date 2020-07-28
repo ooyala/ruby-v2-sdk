@@ -1,7 +1,7 @@
 source :rubygems
 
 gem 'rest-client'
-gem 'json', '~> 1.6.5'
+gem 'json', '~> 2.3.0'
 
 group :test do
   gem 'rr', '~> 1.0.4'
