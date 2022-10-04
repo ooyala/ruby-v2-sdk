@@ -1,11 +1,16 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
     json (1.6.8)
-    mime-types (2.3)
+    mime-types (2.99.3)
     multi_json (1.10.1)
-    netrc (0.7.7)
-    rest-client (1.7.2)
+    netrc (0.11.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rr (1.0.5)
@@ -13,6 +18,9 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.5.3)
     simplecov-html (0.5.3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8.2)
 
 PLATFORMS
   ruby
